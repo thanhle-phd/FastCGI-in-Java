@@ -1,13 +1,13 @@
 # fastCGI-in-Java
 FastCGI programming in Java: library and a demo program. \
-The Java library is from libfcgi-dev Debian package.\
+The Java library is from libfcgi-dev Debian package.
 # How to compile the program
-- Compile the library and export class files to current directory\
-javac -d . libfcgi-java/*.java\
-- Compile the main program\
-javac tnFCGI.java\
-- Build program JAR file\
-jar cvfm tnFCGI.jar tnFCGI.MF *.class\
+- Compile the library and export class files to current directory
+javac -d . libfcgi-java/*.java
+- Compile the main program
+javac tnFCGI.java
+- Build program JAR file
+jar cvfm tnFCGI.jar tnFCGI.MF *.class
 # How to run the program
 ## Prerequisites
 - Web server that supports fast CGI, NGINX for example
