@@ -15,8 +15,8 @@ jar cvfm tnFCGI.jar tnFCGI.MF *.class\
 - Setup the program to run as a service (please check systemd)
 - Configure NGINX to talk with the program using fastCGI
 Here below is an example of NGINX web setting \
->            location /jar/ { \
->                fastcgi_pass 127.0.0.1:9000; \
+>            location /jar/ {
+>                fastcgi_pass 127.0.0.1:9000;
 >                fastcgi_param PATH_INFO         $fastcgi_path_info; \
 >                fastcgi_param SCRIPT_NAME       $fastcgi_script_name; \
 >                fastcgi_param SCRIPT_FILENAME   $document_root$fastcgi_script_name; \
