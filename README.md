@@ -10,12 +10,12 @@ javac tnFCGI.java\
 jar cvfm tnFCGI.jar tnFCGI.MF *.class\
 # How to run the program
 ## Prerequisites
-- Web server that supports fast CGI, NGINX for example\
+- Web server that supports fast CGI, NGINX for example
 ## Run program using nginx on Linux (Ubuntu/Debian)
 - Setup the program to run as a service (please check systemd)
 - Configure NGINX to talk with the program using fastCGI
 
-Here below is an example of NGINX web setting\
+Here below is an example of NGINX web setting
 >            location /jar/ {
 >                fastcgi_pass 127.0.0.1:9000;
 >                fastcgi_param PATH_INFO         $fastcgi_path_info;
